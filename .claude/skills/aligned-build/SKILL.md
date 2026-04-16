@@ -56,7 +56,9 @@ main
 
 **Key rules:**
 - Steps 1–5 (Alignment) all happen on `feature/<feature-slug>`. Artifacts are
-  committed to this branch as they are produced.
+  committed and pushed to this branch as they are produced. Once an artifact
+  is finalized, push immediately (`git push -u origin feature/<feature-slug>`)
+  so work is not lost.
 - Step 6 (Work Tree) designs the slice branches but does not create them yet.
 - Step 7 (Implement) creates worktree branches FROM the feature branch
   (not from `main`). Each worktree starts with the full artifact set and plan.
@@ -238,7 +240,7 @@ testable unit of work, and clearly identify execution dependencies.
 
 **Instructions:**
 1. Confirm you are on the `feature/<feature-slug>` branch and all artifacts
-   from Steps 1–5 are committed.
+   from Steps 1–5 are committed and pushed to the remote.
 2. Group the plan's tasks into slice branches. Each branch should be:
    - A testable, independently mergeable unit of work.
    - Named with the feature slug prefix:
@@ -282,7 +284,7 @@ testable unit of work, and clearly identify execution dependencies.
 branch and implementing each slice.
 
 **Instructions:**
-1. Confirm you are on `feature/<feature-slug>` with all artifacts committed.
+1. Confirm you are on `feature/<feature-slug>` with all artifacts committed and pushed to the remote.
 2. Present the execution order from Step 6, organized into waves:
    - **Wave 1:** All branches with no dependencies (can run in parallel).
    - **Wave 2:** Branches whose dependencies are satisfied after Wave 1.

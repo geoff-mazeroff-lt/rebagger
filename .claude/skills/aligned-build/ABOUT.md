@@ -4,6 +4,11 @@ An orchestrator skill that walks you through an 8-step workflow for taking a
 ticket from questions to a reviewed pull request. Each step produces a markdown
 artifact and pauses for human verification before proceeding.
 
+## Acknolwedgement
+
+The idea for this skill came from Dexter Horthy's talk where he describes the
+QRSPI framework. https://www.youtube.com/watch?v=YwZR6tc7qYg
+
 ## The 8 Steps
 
 | #  | Step       | Phase     | Goal                                           |

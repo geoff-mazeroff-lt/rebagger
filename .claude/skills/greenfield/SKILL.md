@@ -231,6 +231,11 @@ will include, with recommended choices the user can confirm or override.
    - Configure development tooling (linter, formatter, editor settings).
    - Set up the testing framework with a sample test.
    - Generate the README and any other documentation.
+   - Generate `CLAUDE.md` at the repo root by synthesizing the workflow
+     artifacts: project overview from `01-refined-problem.md`, tech stack
+     from `02-tech-stack.md`, project structure and conventions from
+     `03-design.md`, and development commands (build, lint, test, start)
+     from the verification section of `04-scaffolding-checklist.md`.
    - Create placeholder code that demonstrates the chosen patterns
      (e.g., a sample route, a sample component, a sample model).
 2. After scaffolding, run the verification steps from the checklist:
@@ -255,7 +260,7 @@ will include, with recommended choices the user can confirm or override.
 > - Tests: ✓
 > - Runs locally: ✓
 >
-> [List of files created]
+> [List of files created, including CLAUDE.md]
 >
 > Review the generated code. When you're satisfied, say **'next'** to
 > generate the deployment readiness checklist."
